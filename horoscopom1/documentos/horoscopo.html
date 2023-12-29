@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horóscopo Semanal</title>
+  <!-- Enlaces a íconos -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/imagenes/apple-icon-57x57.png">
+  <!-- ... (otros enlaces a íconos) ... -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Metadatos para SEO -->
+  <meta name="description" content="Descubre lo que te depara esta semana según tu signo zodiacal. Consulta tu horóscopo semanal para Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis.">
+  <meta name="keywords" content="horóscopo semanal, astrología, signos zodiacales, Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario, Piscis">
+  <meta name="author" content="Tu Nombre o el Nombre de tu Sitio">
+  <meta name="robots" content="index, follow">
+
+  <!-- Metadatos de Open Graph para redes sociales -->
+  <meta property="og:title" content="Horóscopo Semanal">
+  <meta property="og:description" content="Descubre lo que te depara esta semana según tu signo zodiacal. Consulta tu horóscopo semanal para Aries, Tauro, Géminis, Cáncer, Leo, Virgo, Libra, Escorpio, Sagitario, Capricornio, Acuario y Piscis.">
+  <!-- Reemplaza con la URL de tu imagen para compartir en redes sociales -->
+  <meta property="og:image" content="https://drive.google.com/file/d/1AOdvQ4p9s_vwnCgAsoHE195-pUvp-HXo/view?usp=drive_link">
+
+  <!-- Enlace a tu archivo de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Script JavaScript para mostrar fechas -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var fechaActual = new Date();
+      document.getElementById("desde-fecha").innerHTML = "Desde: " + formatDate(fechaActual);
+
+      var fechaVencimiento = new Date(fechaActual);
+      fechaVencimiento.setDate(fechaVencimiento.getDate() + 7);
+      document.getElementById("hasta-fecha").innerHTML = "Hasta: " + formatDate(fechaVencimiento);
+    });
+
+    function formatDate(date) {
+      var day = date.getDate();
+      var month = date.getMonth() + 1;
+      var year = date.getFullYear();
+      return day + '/' + month + '/' + year;
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <p id="desde-fecha"></p>
+    <p id="hasta-fecha"></p>
+
+    <header>
+      <h1>Horóscopo Semanal</h1>
+    </header>
+
+    <section>
+      <!-- Contenido de los signos zodiacales -->
+        <main>
+    <!-- Aries -->
+    <section>
+       <i class="section-icon">♈</i>
+      <h2>Aries</h2>
+      <p>Esta semana, Aries, te sentirás lleno de energía y listo para enfrentar nuevos desafíos. Es un buen momento para tomar la iniciativa en proyectos importantes. No temas expresar tus ideas y liderar con confianza.</p>
+    </section>
+
+    <!-- Tauro -->
+    <section>
+       <i class="section-icon">♉</i>
+      <h2>Tauro</h2>
+      <p>Tauro, en los próximos días, enfócate en construir bases sólidas tanto en el trabajo como en tus relaciones personales. La paciencia y la perseverancia serán clave. Dedica tiempo a cuidar tu bienestar físico y emocional.</p>
+    </section>
+
+    <!-- Géminis -->
+    <section>
+       <i class="section-icon">♊</i>
+      <h2>Géminis</h2>
+      <p>Géminis, tu mente curiosa te llevará a explorar nuevas ideas y perspectivas esta semana. Aprovecha para aprender algo nuevo y comunicarte de manera clara y efectiva. Mantén la flexibilidad ante los cambios.</p>
+    </section>
+
+    <!-- Cáncer -->
+    
+    <section> 
+       <i class="section-icon">♋</i>
+      <h2>Cáncer</h2>
+      <p>Cáncer, esta semana es propicia para fortalecer la conexión emocional en tus relaciones. Dedica tiempo a la familia y seres queridos. En el trabajo, confía en tus instintos y sé receptivo/a a nuevas oportunidades.</p>
+    </section>
+
+    <!-- Leo -->  
+
+    <section> 
+       <i class="section-icon">♌</i>
+      <h2>Leo</h2>
+      <p>Leo, despliega tu creatividad y carisma esta semana. Es un momento favorable para destacar en el trabajo y en tus actividades sociales. En el amor, muestra tu generosidad y disfruta del reconocimiento que mereces.</p>
+    </section>
+
+    <!-- Virgo -->
+    <section> 
+       <i class="section-icon">♍</i>
+      <h2>Virgo</h2>
+      <p>Virgo, dedica tiempo a la planificación y organización. Enfócate en tus metas a largo plazo y sé disciplinado/a en su consecución. En las relaciones, la empatía y la comunicación abierta serán fundamentales.</p>
+    </section>
+
+    <!-- Libra -->
+    <section>
+       <i class="section-icon">♎</i>
+      <h2>Libra</h2>
+      <p>Libra, busca el equilibrio en tus decisiones y relaciones. Esta semana, destaca tus habilidades sociales y diplomáticas en el trabajo. En el amor, la armonía y la cooperación serán esenciales. Expresa tus opiniones con tacto.</p>
+    </section>
+
+    <!-- Escorpio -->
+    <section>
+       <i class="section-icon">♏</i>
+      <h2>Escorpio</h2>
+      <p>Escorpio, esta semana te invita a la reflexión y la introspección. Revisa tus metas y haz ajustes necesarios. En las relaciones, la honestidad y la confianza son clave. Mantén la determinación en la búsqueda de tus objetivos.</p>
+    </section>
+
+    <!-- Sagitario -->
+    <section> 
+       <i class="section-icon">♐</i>
+      <h2>Sagitario</h2>
+      <p>Sagitario, amplía tus horizontes y busca nuevas experiencias. Esta semana es ideal para viajar o explorar nuevos conocimientos. En el ámbito financiero, sé prudente. En el amor, disfruta de la aventura y la diversión.</p>
+    </section>
+
+    <!-- Capricornio -->
+    <section> 
+       <i class="section-icon">♑</i>
+      <h2>Capricornio</h2>
+      <p>Capricornio, enfócate en el crecimiento profesional y la estabilidad laboral esta semana. Sé disciplinado/a en la consecución de tus metas. En las relaciones, la paciencia y la comprensión serán esenciales. Cultiva la armonía en el hogar.</p>
+    </section>
+
+    <!-- Acuario -->
+    <section><i class="section-icon">♒</i>
+
+      <h2>Acuario</h2>
+      <p>Acuario, destaca por tu originalidad y creatividad en el trabajo. Esta semana es perfecta para expresar tus ideas innovadoras. En las relaciones, la independencia y la comunicación abierta son fundamentales. Disfruta de tu libertad.</p>
+    </section>
+
+    <!-- Piscis --> 
+
+    <section>
+       <i class="section-icon">♓</i>
+      <h2>Piscis</h2>
+      <p>Piscis, conecta con tus emociones y busca la espiritualidad esta semana. Confía en tu intuición, especialmente en el trabajo. En el amor, la compasión y la ternura serán fundamentales. Cuida de tu bienestar general.</p>
+    </section>
+  </main>
+    </section>
+  </main>
+</body>
+</html>

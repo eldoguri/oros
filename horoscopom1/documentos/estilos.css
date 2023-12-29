@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/imagenes/pexels-pixabay-2150.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 50px;
+  }
+  
+  main {
+    flex: 1; /* Hace que ocupe todo el espacio restante */
+    margin: 20px;
+  }
+  
+  section {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  section:hover {
+    transform: scale(1.02);
+  }
+  
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .section-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
